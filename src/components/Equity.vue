@@ -32,7 +32,6 @@ export default {
   background-color: #2ecc71;
   z-index: -10;
   color: white;
-  position: relative;
 }
 $maxWidth: 1920;
 @mixin adaptiv($pcSize, $mobSize) {
@@ -52,7 +51,10 @@ $maxWidth: 1920;
     padding-top: 8px;
     padding-bottom: 37px;
     text-align: center;
-    height: 790px;
+    height: 820px;
+  }
+  @media (max-width: 320px) {
+    height: 780px;
   }
 }
 .equity__text {
@@ -66,24 +68,23 @@ $maxWidth: 1920;
 }
 .equity__phone {
   position: absolute;
-  right: 10%;
+  right: 0;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-30%);
   max-width: 654px;
-  width: calc(55%);
+  width: calc(50%);
   height: auto;
   @media (max-width: 1600px) {
     right: 0%;
   }
   @media (max-width: 768px) {
-    position: absolute;
-    transform: translateY(-60%);
+    transform: translateY(-20%);
     margin: 0 auto;
     width: calc(100%);
     max-width: 570px;
   }
   @media (max-width: 320px) {
-    transform: translateY(-70%);
+    transform: translateY(-15%);
   }
 }
 
@@ -92,6 +93,7 @@ $maxWidth: 1920;
   font-weight: 700;
   line-height: 71px;
   margin-bottom: 28px;
+  z-index: 100;
   @media (max-width: 768px) {
     margin-bottom: 0px;
   }
@@ -100,6 +102,7 @@ $maxWidth: 1920;
   @include adaptiv(32, 22);
   font-weight: 400;
   line-height: 44px;
+  z-index: 100;
   margin-bottom: 39px;
   @media (max-width: 768px) {
     margin-bottom: 16px;

@@ -47,6 +47,7 @@ $maxWidth: 1920;
   align-items: center;
   padding-top: 215px;
   padding-bottom: 272px;
+  position: relative;
   @media (max-width: 768px) {
     padding-top: 8px;
     padding-bottom: 37px;
@@ -68,9 +69,9 @@ $maxWidth: 1920;
 }
 .equity__phone {
   position: absolute;
-  right: 0;
+  right: -10%;
   top: 50%;
-  transform: translateY(-30%);
+  transform: translateY(-50%);
   max-width: 654px;
   width: calc(50%);
   height: auto;
@@ -78,13 +79,13 @@ $maxWidth: 1920;
     right: 0%;
   }
   @media (max-width: 768px) {
-    transform: translateY(-20%);
+    transform: translateY(-60%);
     margin: 0 auto;
     width: calc(100%);
     max-width: 570px;
   }
   @media (max-width: 320px) {
-    transform: translateY(-15%);
+    transform: translateY(-65%);
   }
 }
 
